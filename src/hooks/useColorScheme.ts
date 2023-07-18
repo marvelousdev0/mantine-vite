@@ -1,7 +1,7 @@
 import { ColorScheme } from "@mantine/core";
 import { useColorScheme, useHotkeys, useLocalStorage } from "@mantine/hooks";
-import { setColorScheme } from "components/ThemeProvider/themeProviderSlice";
-import { useAppDispatch } from "./store";
+import { setColorScheme } from "components/ThemeProvider/ThemeProvider.slice";
+import { useAppDispatch } from "./useStore";
 
 export function usePreferColorScheme() {
   const colorScheme = useColorScheme();

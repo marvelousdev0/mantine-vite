@@ -1,7 +1,7 @@
 import { MantineProvider, createEmotionCache } from "@mantine/core";
-import { useAppSelector } from "hooks/store";
+import { useAppSelector } from "hooks/useStore";
 import { WithChildren } from "types/common";
-import { colorScheme as storeColorScheme } from "./themeProviderSlice";
+import { colorScheme as storeColorScheme } from "./ThemeProvider.slice";
 
 const myCache = createEmotionCache({ key: "ui" });
 
